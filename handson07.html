@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- Crie um algoritmo que calcule a média de duas notas de um aluno-->
+     <!-- Verificar se o aluno é aprovado ou reprovado -->
+
+     Digite a nota 1 <input type="number" id="nota1">
+     Digite a nota 2 <input type="number" id="nota2">
+
+<button onclick= "resultado()"">verificar</button>
+
+<script>
+    function resultado(){
+        var nota1= parseInt(document.getElementById("nota1").value)
+
+        var nota2= parseInt(document.getElementById("nota2").value)
+
+        var media= (nota1 + nota2)/2
+    
+        if (media >=7) {
+        alert(`Média do aluno é $(media). Aprovado`)
+
+        }else{
+        alert(`Reprovado`)
+        }
+    }
+</script>
+</body>
+</html>
